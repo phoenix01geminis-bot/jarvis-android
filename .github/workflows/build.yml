@@ -17,7 +17,7 @@ jobs:
     - name: Build Debug APK
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      run:./gradlew assembleDebug
+      run: ./gradlew assembleDebug
     - name: Upload APK
       uses: actions/upload-artifact@v3
       with:
